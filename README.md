@@ -18,7 +18,7 @@ It use [sundown](https://github.com/vmg/sundown) sources to parse markdown text.
 
 ### Objective-C
 
-```
+```objc
 SSKSunsetParser *parser = [[SSKSunsetParser alloc] initWithText:@"# Hello world"];
 NSLog(@"%@", [parser toHTML]); // => <h1> Hello world
 ```
