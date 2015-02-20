@@ -45,6 +45,7 @@
 
 - (NSString *)toHTML {
     const uint8_t *data = (uint8_t *)[self.text.copy UTF8String];
+    uint32_t size = (uint32_t)[self.text lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
     struct buf *ob;
     struct sd_callbacks callbacks;
     struct html_renderopt options;
@@ -54,7 +55,7 @@
     ob = bufnew(OUTPUT_UNIT);
     sdhtml_renderer(&callbacks, &options, 0);
     markdown = sd_markdown_new(0, 16, &callbacks, &options);
-    sd_markdown_render(ob, data, sizeof(uint8 *) * sizeof(data), markdown);
+    sd_markdown_render(ob, data, 2 * size, markdown);
     sd_markdown_free(markdown);
 
     NSString *html = [NSString stringWithUTF8String:(const char *)ob->data];

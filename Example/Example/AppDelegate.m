@@ -18,7 +18,7 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    NSString *text = @"# Example\n\n## Description\n\nThis is a parser.\n\n- hello\n- world\n\n";
+    NSString *text = @"# Example\n\n-a";
     SSKSunsetParser *parser = [[SSKSunsetParser alloc] initWithText:text];
     NSLog(@"%@", parser.toHTML);
 }
