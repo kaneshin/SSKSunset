@@ -16,6 +16,8 @@ It use [sundown](https://github.com/vmg/sundown) sources to parse markdown text.
 
 ## Usage
 
+Import `#import <SSKSunset/SSKSunset.h>` in your header file.
+
 ### Objective-C
 
 ```objc
