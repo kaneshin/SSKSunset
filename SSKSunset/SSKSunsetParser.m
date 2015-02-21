@@ -31,9 +31,18 @@
 
 @interface SSKSunsetParser ()
 @property (strong) NSString *text;
+- (uint32_t)markdownExtensions;
 @end
 
 @implementation SSKSunsetParser
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.extensions = 0;
+    }
+    return self;
+}
 
 - (instancetype)initWithText:(NSString *)text {
     self = [self init];
@@ -54,8 +63,7 @@
     /* performing markdown parsing */
     ob = bufnew(OUTPUT_UNIT);
     sdhtml_renderer(&callbacks, &options, 0);
-    int ext = MKDEXT_TABLES;
-    markdown = sd_markdown_new(self.extensions, 16, &callbacks, &options);
+    markdown = sd_markdown_new(self.markdownExtensions, 16, &callbacks, &options);
     // sdhtml_smartypants(ob, data, size);
     sd_markdown_render(ob, data, size, markdown);
     sd_markdown_free(markdown);
@@ -65,6 +73,50 @@
     /* cleanup */
     bufrelease(ob);
     return html;
+}
+
+- (uint32_t)markdownExtensions {
+    uint32_t ext = 0;
+    if (self.extensions & SSKSunsetMarkdown_NO_INTRA_EMPHASIS) {
+        ext |= MKDEXT_NO_INTRA_EMPHASIS;
+    }
+    if (self.extensions & SSKSunsetMarkdown_TABLES) {
+        ext |= MKDEXT_TABLES;
+    }
+    if (self.extensions & SSKSunsetMarkdown_FENCED_CODE) {
+        ext |= MKDEXT_FENCED_CODE;
+    }
+    if (self.extensions & SSKSunsetMarkdown_AUTOLINK) {
+        ext |= MKDEXT_AUTOLINK;
+    }
+    if (self.extensions & SSKSunsetMarkdown_STRIKETHROUGH) {
+        ext |= MKDEXT_STRIKETHROUGH;
+    }
+    if (self.extensions & SSKSunsetMarkdown_UNDERLINE) {
+        ext |= MKDEXT_UNDERLINE;
+    }
+    if (self.extensions & SSKSunsetMarkdown_SPACE_HEADERS) {
+        ext |= MKDEXT_SPACE_HEADERS;
+    }
+    if (self.extensions & SSKSunsetMarkdown_SUPERSCRIPT) {
+        ext |= MKDEXT_SUPERSCRIPT;
+    }
+    if (self.extensions & SSKSunsetMarkdown_LAX_SPACING) {
+        ext |= MKDEXT_LAX_SPACING;
+    }
+    if (self.extensions & SSKSunsetMarkdown_DISABLE_INDENTED_CODE) {
+        ext |= MKDEXT_DISABLE_INDENTED_CODE;
+    }
+    if (self.extensions & SSKSunsetMarkdown_HIGHLIGHT) {
+        ext |= MKDEXT_HIGHLIGHT;
+    }
+    if (self.extensions & SSKSunsetMarkdown_FOOTNOTES) {
+        ext |= MKDEXT_FOOTNOTES;
+    }
+    if (self.extensions & SSKSunsetMarkdown_QUOTE) {
+        ext |= MKDEXT_QUOTE;
+    }
+    return ext;
 }
 
 @end

@@ -13,6 +13,7 @@
 		790B70C21A979EA80045779F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 790B70C01A979EA80045779F /* MainMenu.xib */; };
 		790B70D81A979EF30045779F /* SSKSunset.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790B70D71A979EF30045779F /* SSKSunset.framework */; };
 		790B70D91A979EF30045779F /* SSKSunset.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 790B70D71A979EF30045779F /* SSKSunset.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		79AB92441A987A9E00085140 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79AB92431A987A9E00085140 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +39,7 @@
 		790B70BE1A979EA80045779F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		790B70C11A979EA80045779F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		790B70D71A979EF30045779F /* SSKSunset.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SSKSunset.framework; path = "/Users/kaneshin/Library/Developer/Xcode/DerivedData/SSKSunset-dxowqjotdgtcwpfzxsrcplfrqmtj/Build/Products/Debug/SSKSunset.framework"; sourceTree = "<absolute>"; };
+		79AB92431A987A9E00085140 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79AB92441A987A9E00085140 /* WebKit.framework in Frameworks */,
 				790B70D81A979EF30045779F /* SSKSunset.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,7 +58,6 @@
 		790B70AB1A979EA80045779F = {
 			isa = PBXGroup;
 			children = (
-				790B70D71A979EF30045779F /* SSKSunset.framework */,
 				790B70B61A979EA80045779F /* Example */,
 				790B70B51A979EA80045779F /* Products */,
 			);
@@ -76,6 +78,8 @@
 				790B70BA1A979EA80045779F /* AppDelegate.m */,
 				790B70BE1A979EA80045779F /* Images.xcassets */,
 				790B70C01A979EA80045779F /* MainMenu.xib */,
+				79AB92431A987A9E00085140 /* WebKit.framework */,
+				790B70D71A979EF30045779F /* SSKSunset.framework */,
 				790B70B71A979EA80045779F /* Supporting Files */,
 			);
 			path = Example;

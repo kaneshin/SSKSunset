@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7908CC7B1A97DACB00C268FE /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = 7908CC681A97DACB00C268FE /* autolink.c */; };
-		7908CC7C1A97DACB00C268FE /* autolink.h in Headers */ = {isa = PBXBuildFile; fileRef = 7908CC691A97DACB00C268FE /* autolink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7908CC7C1A97DACB00C268FE /* autolink.h in Headers */ = {isa = PBXBuildFile; fileRef = 7908CC691A97DACB00C268FE /* autolink.h */; };
 		7908CC7D1A97DACB00C268FE /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 7908CC6A1A97DACB00C268FE /* buffer.c */; };
-		7908CC7E1A97DACB00C268FE /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7908CC6B1A97DACB00C268FE /* buffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7908CC7E1A97DACB00C268FE /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7908CC6B1A97DACB00C268FE /* buffer.h */; };
 		7908CC801A97DACB00C268FE /* houdini.h in Headers */ = {isa = PBXBuildFile; fileRef = 7908CC6D1A97DACB00C268FE /* houdini.h */; };
 		7908CC811A97DACB00C268FE /* houdini_href_e.c in Sources */ = {isa = PBXBuildFile; fileRef = 7908CC6E1A97DACB00C268FE /* houdini_href_e.c */; };
 		7908CC821A97DACB00C268FE /* houdini_html_e.c in Sources */ = {isa = PBXBuildFile; fileRef = 7908CC6F1A97DACB00C268FE /* houdini_html_e.c */; };
@@ -19,7 +19,7 @@
 		7908CC851A97DACB00C268FE /* html_blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 7908CC721A97DACB00C268FE /* html_blocks.h */; };
 		7908CC861A97DACB00C268FE /* html_smartypants.c in Sources */ = {isa = PBXBuildFile; fileRef = 7908CC731A97DACB00C268FE /* html_smartypants.c */; };
 		7908CC871A97DACB00C268FE /* markdown.c in Sources */ = {isa = PBXBuildFile; fileRef = 7908CC741A97DACB00C268FE /* markdown.c */; };
-		7908CC881A97DACB00C268FE /* markdown.h in Headers */ = {isa = PBXBuildFile; fileRef = 7908CC751A97DACB00C268FE /* markdown.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7908CC881A97DACB00C268FE /* markdown.h in Headers */ = {isa = PBXBuildFile; fileRef = 7908CC751A97DACB00C268FE /* markdown.h */; };
 		7908CC8C1A97DACB00C268FE /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 7908CC791A97DACB00C268FE /* stack.c */; };
 		7908CC8D1A97DACB00C268FE /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 7908CC7A1A97DACB00C268FE /* stack.h */; };
 		790B705C1A979C800045779F /* SSKSunset.h in Headers */ = {isa = PBXBuildFile; fileRef = 790B705B1A979C800045779F /* SSKSunset.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -178,9 +178,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7908CC841A97DACB00C268FE /* html.h in Headers */,
+				7908CC851A97DACB00C268FE /* html_blocks.h in Headers */,
 				7908CC7E1A97DACB00C268FE /* buffer.h in Headers */,
 				7908CC7C1A97DACB00C268FE /* autolink.h in Headers */,
-				7908CC851A97DACB00C268FE /* html_blocks.h in Headers */,
 				7908CC881A97DACB00C268FE /* markdown.h in Headers */,
 				790B705C1A979C800045779F /* SSKSunset.h in Headers */,
 				7908CC801A97DACB00C268FE /* houdini.h in Headers */,

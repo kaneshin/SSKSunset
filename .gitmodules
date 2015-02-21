@@ -1,6 +1,3 @@
-[submodule "Vendor/sundown"]
-	path = Vendor/sundown
-	url = https://github.com/vmg/sundown.git
 [submodule "Vendor/redcarpet"]
 	path = Vendor/redcarpet
 	url = https://github.com/vmg/redcarpet.git

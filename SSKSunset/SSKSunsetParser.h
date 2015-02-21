@@ -20,12 +20,27 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
+#import <Cocoa/Cocoa.h>
 
-#include <SSKSunset/markdown.h>
+// Respect for the redcarpet.
+typedef NS_ENUM(NSUInteger, SSKSunsetMarkdownExtensions) {
+    SSKSunsetMarkdown_NO_INTRA_EMPHASIS,
+    SSKSunsetMarkdown_TABLES,
+    SSKSunsetMarkdown_FENCED_CODE,
+    SSKSunsetMarkdown_AUTOLINK,
+    SSKSunsetMarkdown_STRIKETHROUGH,
+    SSKSunsetMarkdown_UNDERLINE,
+    SSKSunsetMarkdown_SPACE_HEADERS,
+    SSKSunsetMarkdown_SUPERSCRIPT,
+    SSKSunsetMarkdown_LAX_SPACING,
+    SSKSunsetMarkdown_DISABLE_INDENTED_CODE,
+    SSKSunsetMarkdown_HIGHLIGHT,
+    SSKSunsetMarkdown_FOOTNOTES,
+    SSKSunsetMarkdown_QUOTE,
+};
 
 @interface SSKSunsetParser : NSObject
-@property (assign) uint32_t extensions;
+@property (assign) SSKSunsetMarkdownExtensions extensions;
 - (instancetype)initWithText:(NSString *)text;
 - (NSString *)toHTML;
 @end
