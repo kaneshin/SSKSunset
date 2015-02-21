@@ -36,7 +36,6 @@
 @implementation SSKSunsetParser {
     struct sd_callbacks callbacks;
     struct html_renderopt options;
-    struct buf *ob;
     struct sd_markdown *markdown;
 }
 
@@ -44,7 +43,6 @@
     self = [super init];
     if (self) {
         self.extensions = SSKSunsetMarkdown_None;
-        ob = bufnew(OUTPUT_UNIT);
         sdhtml_renderer(&callbacks, &options, 0);
     }
     return self;
@@ -59,20 +57,26 @@
 }
 
 - (void)dealloc {
-    /* cleanup */
-    bufrelease(ob);
 }
 
 - (NSString *)toHTML {
     const uint8_t *data = (uint8_t *)[self.text.copy UTF8String];
     uint32_t size = (uint32_t)[self.text lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
+    struct buf *ob;
+
+    ob = bufnew(OUTPUT_UNIT);
 
     /* performing markdown parsing */
     markdown = sd_markdown_new(self.markdownExtensions, 16, &callbacks, &options);
     sd_markdown_render(ob, data, size, markdown);
     sd_markdown_free(markdown);
 
-    return [NSString stringWithUTF8String:(const char *)ob->data];
+    NSString *html = [NSString stringWithUTF8String:(const char *)ob->data];
+
+    /* cleanup */
+    bufrelease(ob);
+
+    return html;
 }
 
 - (uint32_t)markdownExtensions {
