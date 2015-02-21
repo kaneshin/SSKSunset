@@ -76,6 +76,9 @@
     /* cleanup */
     bufrelease(ob);
 
+    if (html == nil) {
+        html = @"";
+    }
     return html;
 }
 
