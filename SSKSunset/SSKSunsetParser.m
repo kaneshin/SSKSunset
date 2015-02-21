@@ -30,16 +30,22 @@
 #define OUTPUT_UNIT 64
 
 @interface SSKSunsetParser ()
-@property (strong) NSString *text;
 - (uint32_t)markdownExtensions;
 @end
 
-@implementation SSKSunsetParser
+@implementation SSKSunsetParser {
+    struct sd_callbacks callbacks;
+    struct html_renderopt options;
+    struct buf *ob;
+    struct sd_markdown *markdown;
+}
 
 - (instancetype)init {
     self = [super init];
     if (self) {
-        self.extensions = 0;
+        self.extensions = SSKSunsetMarkdown_None;
+        ob = bufnew(OUTPUT_UNIT);
+        sdhtml_renderer(&callbacks, &options, 0);
     }
     return self;
 }
@@ -52,27 +58,21 @@
     return self;
 }
 
+- (void)dealloc {
+    /* cleanup */
+    bufrelease(ob);
+}
+
 - (NSString *)toHTML {
     const uint8_t *data = (uint8_t *)[self.text.copy UTF8String];
     uint32_t size = (uint32_t)[self.text lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
-    struct buf *ob;
-    struct sd_callbacks callbacks;
-    struct html_renderopt options;
-    struct sd_markdown *markdown;
 
     /* performing markdown parsing */
-    ob = bufnew(OUTPUT_UNIT);
-    sdhtml_renderer(&callbacks, &options, 0);
     markdown = sd_markdown_new(self.markdownExtensions, 16, &callbacks, &options);
-    // sdhtml_smartypants(ob, data, size);
     sd_markdown_render(ob, data, size, markdown);
     sd_markdown_free(markdown);
 
-    NSString *html = [NSString stringWithUTF8String:(const char *)ob->data];
-
-    /* cleanup */
-    bufrelease(ob);
-    return html;
+    return [NSString stringWithUTF8String:(const char *)ob->data];
 }
 
 - (uint32_t)markdownExtensions {

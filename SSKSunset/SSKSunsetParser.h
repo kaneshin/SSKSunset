@@ -24,6 +24,8 @@
 
 // Respect for the redcarpet.
 typedef NS_ENUM(NSUInteger, SSKSunsetMarkdownExtensions) {
+    SSKSunsetMarkdown_None,
+    
     SSKSunsetMarkdown_NO_INTRA_EMPHASIS,
     SSKSunsetMarkdown_TABLES,
     SSKSunsetMarkdown_FENCED_CODE,
@@ -41,6 +43,8 @@ typedef NS_ENUM(NSUInteger, SSKSunsetMarkdownExtensions) {
 
 @interface SSKSunsetParser : NSObject
 @property (assign) SSKSunsetMarkdownExtensions extensions;
+@property (strong) NSString *text;
+
 - (instancetype)initWithText:(NSString *)text;
 - (NSString *)toHTML;
 @end
