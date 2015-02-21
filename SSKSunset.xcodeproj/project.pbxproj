@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7908CC7B1A97DACB00C268FE /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = 7908CC681A97DACB00C268FE /* autolink.c */; };
+		7908CC7C1A97DACB00C268FE /* autolink.h in Headers */ = {isa = PBXBuildFile; fileRef = 7908CC691A97DACB00C268FE /* autolink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7908CC7D1A97DACB00C268FE /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 7908CC6A1A97DACB00C268FE /* buffer.c */; };
+		7908CC7E1A97DACB00C268FE /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7908CC6B1A97DACB00C268FE /* buffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7908CC801A97DACB00C268FE /* houdini.h in Headers */ = {isa = PBXBuildFile; fileRef = 7908CC6D1A97DACB00C268FE /* houdini.h */; };
+		7908CC811A97DACB00C268FE /* houdini_href_e.c in Sources */ = {isa = PBXBuildFile; fileRef = 7908CC6E1A97DACB00C268FE /* houdini_href_e.c */; };
+		7908CC821A97DACB00C268FE /* houdini_html_e.c in Sources */ = {isa = PBXBuildFile; fileRef = 7908CC6F1A97DACB00C268FE /* houdini_html_e.c */; };
+		7908CC831A97DACB00C268FE /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = 7908CC701A97DACB00C268FE /* html.c */; };
+		7908CC841A97DACB00C268FE /* html.h in Headers */ = {isa = PBXBuildFile; fileRef = 7908CC711A97DACB00C268FE /* html.h */; };
+		7908CC851A97DACB00C268FE /* html_blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 7908CC721A97DACB00C268FE /* html_blocks.h */; };
+		7908CC861A97DACB00C268FE /* html_smartypants.c in Sources */ = {isa = PBXBuildFile; fileRef = 7908CC731A97DACB00C268FE /* html_smartypants.c */; };
+		7908CC871A97DACB00C268FE /* markdown.c in Sources */ = {isa = PBXBuildFile; fileRef = 7908CC741A97DACB00C268FE /* markdown.c */; };
+		7908CC881A97DACB00C268FE /* markdown.h in Headers */ = {isa = PBXBuildFile; fileRef = 7908CC751A97DACB00C268FE /* markdown.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7908CC8C1A97DACB00C268FE /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 7908CC791A97DACB00C268FE /* stack.c */; };
+		7908CC8D1A97DACB00C268FE /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 7908CC7A1A97DACB00C268FE /* stack.h */; };
 		790B705C1A979C800045779F /* SSKSunset.h in Headers */ = {isa = PBXBuildFile; fileRef = 790B705B1A979C800045779F /* SSKSunset.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		790B70621A979C800045779F /* SSKSunset.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790B70561A979C800045779F /* SSKSunset.framework */; };
 		790B70691A979C800045779F /* SSKSunsetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 790B70681A979C800045779F /* SSKSunsetTests.m */; };
 		790B70741A979D680045779F /* SSKSunsetParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 790B70721A979D680045779F /* SSKSunsetParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		790B70751A979D680045779F /* SSKSunsetParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 790B70731A979D680045779F /* SSKSunsetParser.m */; };
-		790B70971A979DDA0045779F /* houdini.h in Headers */ = {isa = PBXBuildFile; fileRef = 790B707E1A979DDA0045779F /* houdini.h */; };
-		790B70981A979DDA0045779F /* houdini_href_e.c in Sources */ = {isa = PBXBuildFile; fileRef = 790B707F1A979DDA0045779F /* houdini_href_e.c */; };
-		790B70991A979DDA0045779F /* houdini_html_e.c in Sources */ = {isa = PBXBuildFile; fileRef = 790B70801A979DDA0045779F /* houdini_html_e.c */; };
-		790B709A1A979DDA0045779F /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = 790B70811A979DDA0045779F /* html.c */; };
-		790B709B1A979DDA0045779F /* html.h in Headers */ = {isa = PBXBuildFile; fileRef = 790B70821A979DDA0045779F /* html.h */; };
-		790B709C1A979DDA0045779F /* html_smartypants.c in Sources */ = {isa = PBXBuildFile; fileRef = 790B70831A979DDA0045779F /* html_smartypants.c */; };
-		790B70A11A979DDA0045779F /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = 790B70891A979DDA0045779F /* autolink.c */; };
-		790B70A21A979DDA0045779F /* autolink.h in Headers */ = {isa = PBXBuildFile; fileRef = 790B708A1A979DDA0045779F /* autolink.h */; };
-		790B70A31A979DDA0045779F /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 790B708B1A979DDA0045779F /* buffer.c */; };
-		790B70A41A979DDA0045779F /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 790B708C1A979DDA0045779F /* buffer.h */; };
-		790B70A51A979DDA0045779F /* html_blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 790B708D1A979DDA0045779F /* html_blocks.h */; };
-		790B70A61A979DDA0045779F /* markdown.c in Sources */ = {isa = PBXBuildFile; fileRef = 790B708E1A979DDA0045779F /* markdown.c */; };
-		790B70A71A979DDA0045779F /* markdown.h in Headers */ = {isa = PBXBuildFile; fileRef = 790B708F1A979DDA0045779F /* markdown.h */; };
-		790B70A81A979DDA0045779F /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 790B70901A979DDA0045779F /* stack.c */; };
-		790B70A91A979DDA0045779F /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 790B70911A979DDA0045779F /* stack.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +40,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7908CC681A97DACB00C268FE /* autolink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = autolink.c; sourceTree = "<group>"; };
+		7908CC691A97DACB00C268FE /* autolink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolink.h; sourceTree = "<group>"; };
+		7908CC6A1A97DACB00C268FE /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buffer.c; sourceTree = "<group>"; };
+		7908CC6B1A97DACB00C268FE /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		7908CC6D1A97DACB00C268FE /* houdini.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = houdini.h; sourceTree = "<group>"; };
+		7908CC6E1A97DACB00C268FE /* houdini_href_e.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = houdini_href_e.c; sourceTree = "<group>"; };
+		7908CC6F1A97DACB00C268FE /* houdini_html_e.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = houdini_html_e.c; sourceTree = "<group>"; };
+		7908CC701A97DACB00C268FE /* html.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = html.c; sourceTree = "<group>"; };
+		7908CC711A97DACB00C268FE /* html.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = html.h; sourceTree = "<group>"; };
+		7908CC721A97DACB00C268FE /* html_blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = html_blocks.h; sourceTree = "<group>"; };
+		7908CC731A97DACB00C268FE /* html_smartypants.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = html_smartypants.c; sourceTree = "<group>"; };
+		7908CC741A97DACB00C268FE /* markdown.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = markdown.c; sourceTree = "<group>"; };
+		7908CC751A97DACB00C268FE /* markdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = markdown.h; sourceTree = "<group>"; };
+		7908CC791A97DACB00C268FE /* stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stack.c; sourceTree = "<group>"; };
+		7908CC7A1A97DACB00C268FE /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
 		790B70561A979C800045779F /* SSKSunset.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSKSunset.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		790B705A1A979C800045779F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		790B705B1A979C800045779F /* SSKSunset.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSKSunset.h; sourceTree = "<group>"; };
@@ -48,21 +63,6 @@
 		790B70681A979C800045779F /* SSKSunsetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSKSunsetTests.m; sourceTree = "<group>"; };
 		790B70721A979D680045779F /* SSKSunsetParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKSunsetParser.h; sourceTree = "<group>"; };
 		790B70731A979D680045779F /* SSKSunsetParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKSunsetParser.m; sourceTree = "<group>"; };
-		790B707E1A979DDA0045779F /* houdini.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = houdini.h; sourceTree = "<group>"; };
-		790B707F1A979DDA0045779F /* houdini_href_e.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = houdini_href_e.c; sourceTree = "<group>"; };
-		790B70801A979DDA0045779F /* houdini_html_e.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = houdini_html_e.c; sourceTree = "<group>"; };
-		790B70811A979DDA0045779F /* html.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = html.c; sourceTree = "<group>"; };
-		790B70821A979DDA0045779F /* html.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = html.h; sourceTree = "<group>"; };
-		790B70831A979DDA0045779F /* html_smartypants.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = html_smartypants.c; sourceTree = "<group>"; };
-		790B70891A979DDA0045779F /* autolink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = autolink.c; sourceTree = "<group>"; };
-		790B708A1A979DDA0045779F /* autolink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolink.h; sourceTree = "<group>"; };
-		790B708B1A979DDA0045779F /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buffer.c; sourceTree = "<group>"; };
-		790B708C1A979DDA0045779F /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
-		790B708D1A979DDA0045779F /* html_blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = html_blocks.h; sourceTree = "<group>"; };
-		790B708E1A979DDA0045779F /* markdown.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = markdown.c; sourceTree = "<group>"; };
-		790B708F1A979DDA0045779F /* markdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = markdown.h; sourceTree = "<group>"; };
-		790B70901A979DDA0045779F /* stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stack.c; sourceTree = "<group>"; };
-		790B70911A979DDA0045779F /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +84,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7908CC671A97DACB00C268FE /* redcarpet */ = {
+			isa = PBXGroup;
+			children = (
+				7908CC681A97DACB00C268FE /* autolink.c */,
+				7908CC691A97DACB00C268FE /* autolink.h */,
+				7908CC6A1A97DACB00C268FE /* buffer.c */,
+				7908CC6B1A97DACB00C268FE /* buffer.h */,
+				7908CC6D1A97DACB00C268FE /* houdini.h */,
+				7908CC6E1A97DACB00C268FE /* houdini_href_e.c */,
+				7908CC6F1A97DACB00C268FE /* houdini_html_e.c */,
+				7908CC701A97DACB00C268FE /* html.c */,
+				7908CC711A97DACB00C268FE /* html.h */,
+				7908CC721A97DACB00C268FE /* html_blocks.h */,
+				7908CC731A97DACB00C268FE /* html_smartypants.c */,
+				7908CC741A97DACB00C268FE /* markdown.c */,
+				7908CC751A97DACB00C268FE /* markdown.h */,
+				7908CC791A97DACB00C268FE /* stack.c */,
+				7908CC7A1A97DACB00C268FE /* stack.h */,
+			);
+			name = redcarpet;
+			path = Vendor/redcarpet/ext/redcarpet;
+			sourceTree = SOURCE_ROOT;
+		};
 		790B704C1A979C800045779F = {
 			isa = PBXGroup;
 			children = (
@@ -142,48 +165,9 @@
 		790B70761A979DC10045779F /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				790B70771A979DDA0045779F /* sundown */,
+				7908CC671A97DACB00C268FE /* redcarpet */,
 			);
 			name = Vendor;
-			sourceTree = "<group>";
-		};
-		790B70771A979DDA0045779F /* sundown */ = {
-			isa = PBXGroup;
-			children = (
-				790B707D1A979DDA0045779F /* html */,
-				790B70881A979DDA0045779F /* src */,
-			);
-			name = sundown;
-			path = Vendor/sundown;
-			sourceTree = SOURCE_ROOT;
-		};
-		790B707D1A979DDA0045779F /* html */ = {
-			isa = PBXGroup;
-			children = (
-				790B707E1A979DDA0045779F /* houdini.h */,
-				790B707F1A979DDA0045779F /* houdini_href_e.c */,
-				790B70801A979DDA0045779F /* houdini_html_e.c */,
-				790B70811A979DDA0045779F /* html.c */,
-				790B70821A979DDA0045779F /* html.h */,
-				790B70831A979DDA0045779F /* html_smartypants.c */,
-			);
-			path = html;
-			sourceTree = "<group>";
-		};
-		790B70881A979DDA0045779F /* src */ = {
-			isa = PBXGroup;
-			children = (
-				790B70891A979DDA0045779F /* autolink.c */,
-				790B708A1A979DDA0045779F /* autolink.h */,
-				790B708B1A979DDA0045779F /* buffer.c */,
-				790B708C1A979DDA0045779F /* buffer.h */,
-				790B708D1A979DDA0045779F /* html_blocks.h */,
-				790B708E1A979DDA0045779F /* markdown.c */,
-				790B708F1A979DDA0045779F /* markdown.h */,
-				790B70901A979DDA0045779F /* stack.c */,
-				790B70911A979DDA0045779F /* stack.h */,
-			);
-			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,15 +177,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				790B70A91A979DDA0045779F /* stack.h in Headers */,
+				7908CC841A97DACB00C268FE /* html.h in Headers */,
+				7908CC7E1A97DACB00C268FE /* buffer.h in Headers */,
+				7908CC7C1A97DACB00C268FE /* autolink.h in Headers */,
+				7908CC851A97DACB00C268FE /* html_blocks.h in Headers */,
+				7908CC881A97DACB00C268FE /* markdown.h in Headers */,
 				790B705C1A979C800045779F /* SSKSunset.h in Headers */,
-				790B70A51A979DDA0045779F /* html_blocks.h in Headers */,
-				790B70A21A979DDA0045779F /* autolink.h in Headers */,
-				790B70A71A979DDA0045779F /* markdown.h in Headers */,
-				790B70A41A979DDA0045779F /* buffer.h in Headers */,
-				790B709B1A979DDA0045779F /* html.h in Headers */,
-				790B70971A979DDA0045779F /* houdini.h in Headers */,
+				7908CC801A97DACB00C268FE /* houdini.h in Headers */,
 				790B70741A979D680045779F /* SSKSunsetParser.h in Headers */,
+				7908CC8D1A97DACB00C268FE /* stack.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,15 +285,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				790B709A1A979DDA0045779F /* html.c in Sources */,
-				790B70981A979DDA0045779F /* houdini_href_e.c in Sources */,
-				790B70A81A979DDA0045779F /* stack.c in Sources */,
-				790B70A61A979DDA0045779F /* markdown.c in Sources */,
-				790B70A31A979DDA0045779F /* buffer.c in Sources */,
-				790B709C1A979DDA0045779F /* html_smartypants.c in Sources */,
-				790B70A11A979DDA0045779F /* autolink.c in Sources */,
+				7908CC831A97DACB00C268FE /* html.c in Sources */,
+				7908CC811A97DACB00C268FE /* houdini_href_e.c in Sources */,
+				7908CC8C1A97DACB00C268FE /* stack.c in Sources */,
+				7908CC821A97DACB00C268FE /* houdini_html_e.c in Sources */,
+				7908CC861A97DACB00C268FE /* html_smartypants.c in Sources */,
+				7908CC7B1A97DACB00C268FE /* autolink.c in Sources */,
 				790B70751A979D680045779F /* SSKSunsetParser.m in Sources */,
-				790B70991A979DDA0045779F /* houdini_html_e.c in Sources */,
+				7908CC7D1A97DACB00C268FE /* buffer.c in Sources */,
+				7908CC871A97DACB00C268FE /* markdown.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

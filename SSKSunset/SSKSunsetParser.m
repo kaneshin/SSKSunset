@@ -54,8 +54,10 @@
     /* performing markdown parsing */
     ob = bufnew(OUTPUT_UNIT);
     sdhtml_renderer(&callbacks, &options, 0);
-    markdown = sd_markdown_new(0, 16, &callbacks, &options);
-    sd_markdown_render(ob, data, 2 * size, markdown);
+    int ext = MKDEXT_TABLES;
+    markdown = sd_markdown_new(self.extensions, 16, &callbacks, &options);
+    // sdhtml_smartypants(ob, data, size);
+    sd_markdown_render(ob, data, size, markdown);
     sd_markdown_free(markdown);
 
     NSString *html = [NSString stringWithUTF8String:(const char *)ob->data];

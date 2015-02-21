@@ -22,7 +22,10 @@
 
 #import <Foundation/Foundation.h>
 
+#include <SSKSunset/markdown.h>
+
 @interface SSKSunsetParser : NSObject
+@property (assign) uint32_t extensions;
 - (instancetype)initWithText:(NSString *)text;
 - (NSString *)toHTML;
 @end
