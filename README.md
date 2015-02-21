@@ -2,7 +2,7 @@
 
 SSKSunset is kind of Markdown parser for OSX. (Not supported iOS)
 
-It use [sundown](https://github.com/vmg/sundown) sources to parse markdown text.
+The framework uses [redcarpet](https://github.com/vmg/redcarpet) instead of [sundown](https://github.com/vmg/sundown) sources to parse markdown text.
 
 
 ## Installation
