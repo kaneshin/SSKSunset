@@ -23,7 +23,7 @@
 #import <Cocoa/Cocoa.h>
 
 // Respect for the redcarpet.
-typedef NS_ENUM(NSUInteger, SSKSunsetMarkdownExtensions) {
+typedef NS_ENUM(uint32_t, SSKSunsetMarkdownExtensions) {
     SSKSunsetMarkdown_None,
     
     SSKSunsetMarkdown_NO_INTRA_EMPHASIS,
@@ -42,7 +42,7 @@ typedef NS_ENUM(NSUInteger, SSKSunsetMarkdownExtensions) {
 };
 
 @interface SSKSunsetParser : NSObject
-@property (assign) SSKSunsetMarkdownExtensions extensions;
+@property (assign) uint32_t extensions;
 @property (strong) NSString *text;
 
 - (instancetype)initWithText:(NSString *)text;
