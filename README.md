@@ -22,14 +22,14 @@ Import `#import <SSKSunset/SSKSunset.h>` in your header file.
 
 ```objc
 SSKSunsetParser *parser = [[SSKSunsetParser alloc] initWithText:@"# Hello world"];
-NSLog(@"%@", [parser toHTML]); // => <h1> Hello world
+NSLog(@"%@", [parser toHTML]); // => <h1>Hello world</h1>
 ```
 
 ### Swift
 
 ```swift
 let parser = SSKSunsetParser(text: "# Hello world")
-println(parser.toHTML())  // => <h1> Hello world
+println(parser.toHTML())  // => <h1>Hello world</h1>
 ```
 
 ## License:
