@@ -26,7 +26,6 @@
 #include "html.h"
 #include "buffer.h"
 
-#define READ_UNIT 1024
 #define OUTPUT_UNIT 64
 
 @interface SSKSunsetParser ()
@@ -71,7 +70,7 @@
     sd_markdown_render(ob, data, size, markdown);
     sd_markdown_free(markdown);
 
-    NSString *html = [NSString stringWithUTF8String:(const char *)ob->data];
+    NSString *html = [[NSString alloc] initWithBytes:ob->data length:ob->size encoding:NSUTF8StringEncoding];
 
     /* cleanup */
     bufrelease(ob);

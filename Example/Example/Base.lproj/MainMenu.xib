@@ -14,6 +14,7 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
+                <outlet property="textView" destination="fg3-vy-ckT" id="h8a-p7-jY8"/>
                 <outlet property="webView" destination="Xcr-Iw-Ab8" id="bNm-BL-FbK"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
@@ -679,14 +680,50 @@
                 <subviews>
                     <webView translatesAutoresizingMaskIntoConstraints="NO" id="Xcr-Iw-Ab8">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
-                        <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12"/>
+                        <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
+                            <nil key="identifier"/>
+                        </webPreferences>
                     </webView>
+                    <scrollView borderType="line" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NmV-Kq-hNc">
+                        <rect key="frame" x="400" y="0.0" width="200" height="200"/>
+                        <clipView key="contentView" id="bAe-VR-e0t">
+                            <rect key="frame" x="1" y="1" width="223" height="133"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="fg3-vy-ckT">
+                                    <rect key="frame" x="0.0" y="0.0" width="223" height="133"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <size key="minSize" width="198" height="198"/>
+                                    <size key="maxSize" width="463" height="10000000"/>
+                                    <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <size key="minSize" width="198" height="198"/>
+                                    <size key="maxSize" width="463" height="10000000"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </clipView>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="1G9-Jl-bQR"/>
+                            <constraint firstAttribute="width" constant="200" id="1ml-wL-t21"/>
+                        </constraints>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="U8n-rb-SgE">
+                            <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="bQS-tw-zmF">
+                            <rect key="frame" x="224" y="1" width="15" height="133"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Xcr-Iw-Ab8" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="6qR-XJ-ZCG"/>
                     <constraint firstItem="Xcr-Iw-Ab8" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="8x7-ys-H5M"/>
                     <constraint firstAttribute="bottom" secondItem="Xcr-Iw-Ab8" secondAttribute="bottom" id="L1O-0f-0wT"/>
+                    <constraint firstAttribute="bottom" secondItem="NmV-Kq-hNc" secondAttribute="bottom" id="UlJ-wl-wsA"/>
                     <constraint firstAttribute="trailing" secondItem="Xcr-Iw-Ab8" secondAttribute="trailing" id="isE-uk-UuY"/>
+                    <constraint firstAttribute="trailing" secondItem="NmV-Kq-hNc" secondAttribute="trailing" id="ohS-Lw-d51"/>
                 </constraints>
             </view>
         </window>
